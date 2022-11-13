@@ -1,1 +1,5 @@
-# Tugas-Django-Kelompok-4
+# Tugas Django Kelompok 4
+- Rahmat Budi Haryono
+- Zakaria
+- Ihratun
+-Tri Utami
