@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mata Kuliah</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}"> 
+    </head>
+    <body>
+        <img id="banner" src="{% static 'img/crud.jpg' %}" alt="">
+        <div id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/matkul/">Mata Kuliah</a></li>
+            <li><a href="/mahasiswa/">Mahasiswa</a></li>
+        </ul>
+        </div>
+
+        <!-- KELAS CONTAINER BOOTSTRAP -->
+<div class="container"> 
+        <br>
+        {% for tampungPost in TampungPostingan %} 
+        <h3>{{tampungPost.mata_kuliah}}</h3>
+        <h5>{{tampungPost.dosen}}</h5>
+        <div class="alert alert-success" role="alert">Kelas : {{tampungPost.kelas}} </div>
+        {% endfor %}
+ </div>    
+ <!-- FOOTER -->
+<footer class="footer"> 
+    <div class="container"> 
+    <span class="text-dark">Copyright 2022</span> 
+    </div> 
+    </footer>     
+
+        </ul>
+    </body>
+</html>
